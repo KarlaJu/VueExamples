@@ -10,8 +10,15 @@
 
   <div id="app">
     <h1>Product is in here</h1>
-    <h1>{{ product }}</h1>
     <p>{{ description }}</p>
+    <div class="product">
+      <div class="product-image">
+        <img :src="image" :alt="description"/>
+      </div>
+      <div class="product-info">
+        <h1>{{ product }}</h1>
+      </div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="index.js"></script>
