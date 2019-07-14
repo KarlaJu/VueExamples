@@ -23,6 +23,9 @@
         <ul>
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
+        <div v-for="variant in variants" :key="variant.variantId">
+          <p>{{ variant.variantColor}}</p>
+        </div>
         <a v-show="inStock" :href="link" target="_blank">More products like this</a>
       </div>
     </div>

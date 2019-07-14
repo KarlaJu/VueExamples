@@ -7,6 +7,16 @@ var app = new Vue({
     link: 'https://www.amazon.com/Staroar-Special-Crystal-Rhinestone-Painting/dp/B07QHTY6WS/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=paintings&qid=1563057027&s=arts-crafts-intl-ship&sr=1-1',
     inStock: false,
     inventory: 100,
-    details: ["80% Cotton", "20% polyester", "Gender-natural"]
+    details: ["80% Cotton", "20% polyester", "Gender-natural"],
+    variants: [
+      {
+        variantId: 90,
+        variantColor: "Blue"
+      },
+      {
+        variantId: 91,
+        variantColor: "Green"
+      }
+    ]
   }
 })
