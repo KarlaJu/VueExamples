@@ -11,12 +11,23 @@ var app = new Vue({
     variants: [
       {
         variantId: 90,
-        variantColor: "Blue"
+        variantColor: "Blue",
+        variantImage: 'https://www.futurity.org/wp/wp-content/uploads/2018/10/foil-ball-asteroid2_1600.jpg'
       },
       {
         variantId: 91,
-        variantColor: "Green"
+        variantColor: "Green",
+        variantImage: 'https://cdn.cnn.com/cnnnext/dam/assets/170604224537-colorscope-green-leaves-image-full-169.jpg'
       }
-    ]
+    ],
+    cart: 0
+  },
+  methods: {
+    addToCart: function() {
+      this.cart += 1
+    },
+    updateProduct(variantImage) {
+      this.image = variantImage
+    }
   }
 })
